@@ -1,186 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paul Joshua Chinecherem | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <div class="logo">JoshuaPortfolio</div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+      <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
 
-  <main>
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>Hello, I'm <span>PAUL JOSHUA CHINECHEREM</span></h1>
-          <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-          <a href="#projects" class="btn">View My Work</a>
-        </div>
-        <div class="hero-image">
-          <img src="josh.jpg" alt="Portrait of Paul Joshua" class="profile-pic">
-        </div>
-      </div>
-    </section>
+ <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>PAUL JOSHUA CHINECHEREM</span></h1>
+      <p>A passionate developer crafting modern web experiences.</p>
+    </div>
+    <div class="hero-image">
+      <img src="josh.jpg" alt="My Profile Picture">
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <p>
-          I am a motivated and detail-oriented <strong>Full Stack Developer</strong> with hands-on 
-          experience in <strong>Python, JavaScript, HTML, CSS, Django/Flask, and AWS cloud services</strong>. 
-          Currently interning at <strong>Infofit Software, India</strong>, I focus on building scalable and 
+
+  <!-- About Me -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+     I am a motivated and detail-oriented <strong>Full Stack Developer</strong> with hands-on
+          experience in <strong>Python, JavaScript, HTML, CSS, Django/Flask, and AWS cloud services</strong>.
+          Currently interning at <strong>Infofit Software, India</strong>, I focus on building scalable and
           efficient web applications while expanding my technical expertise.
-        </p>
-        <p>
-          Beyond coding, I value <strong>team collaboration, problem-solving, and continuous learning</strong>. 
-          I am passionate about using technology to create impactful solutions, and I am available for 
-          <strong>full-time / remote / on-site opportunities starting September 2025</strong>.
-        </p>
-        <ul class="about-highlights">
-          <li>🚀 Strong problem-solving & debugging</li>
-          <li>🤝 Team collaboration & adaptability</li>
-          <li>☁️ Cloud computing & modern web technologies</li>
-          <li>💡 Open-source contribution enthusiast</li>
-        </ul>
+    </p>
+  </section>
+
+  <!-- Experience & Skills -->
+  <section id="experience" class="section">
+    <h2>Experience & Skills</h2>
+    <div class="skills">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">Python</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="pro 1.jpeg" alt="Property Investment" class="project-img">
+      <h3>Property Investment</h3>
+      <p>
+        A modern, fully responsive real estate website designed to showcase properties in a clean and professional layout. The site features an intuitive navigation system, dynamic property listings, and a mobile-friendly design that adapts seamlessly across devices. Built with HTML and CSS
+      </p>
+      <div class="buttons">
+        <a href="https://joshy0566.github.io/property/" class="btn" target="_blank">View Live</a>
+        <a href="https://github.com/Joshy0566/property.git" class="btn-outline" target="_blank">See Code</a>
       </div>
-    </section>
+    </div>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <img src="project1.jpg" alt="Screenshot of Project One">
-          <h3>Project One</h3>
-          <p>A full-stack web app built with Python and Django.</p>
-          <a href="#" target="_blank" rel="noopener">View Project</a>
-        </article>
-        <article class="project-card">
-          <img src="project2.jpg" alt="Screenshot of Project Two">
-          <h3>Project Two</h3>
-          <p>Cloud-based app deployed on AWS with Docker integration.</p>
-          <a href="#" target="_blank" rel="noopener">View Project</a>
-        </article>
-        <article class="project-card">
-          <img src="project3.jpg" alt="Screenshot of Project Three">
-          <h3>Project Three</h3>
-          <p>Data-driven web app with PostgreSQL backend.</p>
-          <a href="#" target="_blank" rel="noopener">View Project</a>
-        </article>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="studentimage.png" alt="Student Web App" class="project-img">
+      <h3>Student Web App</h3>
+      <p>
+        A simple student web app that allows users to create account ,login to there account and sign up.
+        Built with Html,Css,python and Database.
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/Joshy0566/Joshwebapp22.git" class="btn-outline" target="_blank">See Code</a>
       </div>
-    </section>
+    </div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <ul class="skills-list">
-        <li>Python, JavaScript, HTML5, CSS3</li>
-        <li>Django, Flask</li>
-        <li>MySQL, PostgreSQL, MongoDB</li>
-        <li>AWS (EC2, S3, RDS, IAM)</li>
-        <li>Git & GitHub, Docker, Linux</li>
-      </ul>
-
-      <h3>Soft Skills</h3>
-      <ul class="skills-list">
-        <li>Problem-Solving & Debugging</li>
-        <li>Team Collaboration</li>
-        <li>Adaptability & Quick Learning</li>
-        <li>Strong Communication Skills</li>
-      </ul>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="experience-item">
-        <h3>Software Developer Intern – Infofit Software, Haryana, India</h3>
-        <p><em>June 2024 – Present</em></p>
-        <ul>
-          <li>Developed and maintained full-stack web applications using Python, HTML, CSS, and databases.</li>
-          <li>Worked with AWS cloud services for deployment and infrastructure management.</li>
-          <li>Participated in code reviews, debugging, and testing for quality assurance.</li>
-          <li>Collaborated with team to design responsive front-end and integrate APIs.</li>
-        </ul>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="Hotel.png" alt="HOTEL Web App" class="project-img">
+      <h3>HOTEL Web App</h3>
+      <p>
+A hotel management web project designed to handle room booking, guest information, and front-end presentation. Implemented with HTML, CSS, focusing on simple user flows and a structured layout. Built to demonstrate CRUD functionality and backend integration.
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/Joshy0566/Lodge.git" class="btn-outline" target="_blank">See Code</a>
       </div>
-    </section>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Federal Polytechnic Oko</strong>, HND Computer Engineering (2019–2024)</li>
-        <li><strong>Modebe Memorial Secondary School</strong>, SSCE (2010–2016)</li>
-        <li><strong>Modebe Memorial Primary School</strong>, First School Leaving Certificate (2004–2010)</li>
-      </ul>
-    </section>
+  </div>
+</section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2>Certifications & Courses</h2>
-      <ul>
-        <li>Digital Awareness Certificate – Cisco (2024)</li>
-        <li>Cloud Computing – Infofit Software Solution (2025)</li>
-        <li>AWS Cloud Practitioner</li>
-        <li>Full Stack Web Development (Platform)</li>
-        <li>Python for Web Development (Coursera/Udemy)</li>
-      </ul>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-      <h2>Resume</h2>
-      <a href="resume.pdf" class="btn" download>Download Resume</a>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:pauljosh686@gmail.com">pauljosh686@gmail.com</a></p>
-      <p>Phone: <a href="tel:+2349016459806">+2349016459806</a></p>
-      <p>Location: Anambra • Lagos • Open to Relocation/Remote</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/paul-josh-9104a9214" target="_blank">View Profile</a></p>
-      <p>GitHub: <a href="https://github.com/Joshy0566" target="_blank">View Projects</a></p>
-      <form>
-        <input type="text" placeholder="Your Name" required aria-label="Your Name">
-        <input type="email" placeholder="Your Email" required aria-label="Your Email">
-        <textarea placeholder="Your Message" required aria-label="Your Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Paul Joshua Chinecherem | All Rights Reserved</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/paul-josh-9104a9214" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-      <a href="https://github.com/Joshy0566" target="_blank" aria-label="GitHub">GitHub</a>
-      <a href="#" aria-label="Twitter">Twitter</a>
-    </div>
+    <p>© 2025 PAUL JOSHUA CHINECHEREM | All Rights Reserved</p>
   </footer>
 
-  <!-- Scroll to Top Button -->
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="scroll-top">↑</button>
+  <script src="script.js"></script>
 </body>
 </html>
+
